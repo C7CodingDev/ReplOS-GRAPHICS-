@@ -32,9 +32,10 @@ SYSTEM_LOCK = False #if system is locked
 UNLOCKABLE = True #if the user can unlock the system from the lock
 PHOTOVIEWER_ALLOWED = True #if the photoviewer is allowed
 OS_ID = 56782983 #The id for the OS version
-version = 'v.1.4' #OS Version
-build = 1231021 #LastUpdated
+version = 'v.1.5' #OS Version
+build = 1231021.2 #LastUpdated [optional: if the OS was updated 5 hours later you can add .2 or somthing  like that]
 DOWNLOADING_ALLOWED = True #If the user can download games [discluding chatbot because it is BUILT IN]
+CALCULATOR_ALLOWED = True #I put this feture because I dont want people using the calculator for school tests
 
 
 ####DO NOT EDIT BELOW THIS UNLESS YOU KNOW HOW TOO!!#### 
@@ -108,7 +109,27 @@ if loginpass == code:
          screen.bgcolor('light blue')
       if DOWNLOADING_ALLOWED == False:  
        messagebox.showerror('403','ACCESS DENIED. DOWNLOADING SET TO False.')
+    if run == 'calculator':
+      if CALCULATOR_ALLOWED == True:
+       num1 = int(screen.numinput('Calculator','Number1:'))
+       num2 = int(screen.numinput('Calculator','Number2'))
+       oper = screen.textinput('Calculator','Operator')
+       if oper == '+':
+         calcresult = str(num1+num2)
+         messagebox.showinfo('CalculatorResult','Your Awnser Is:'+str(calcresult))
+       if oper == '-':
+         calcresult = str(num1-num2)
+         messagebox.showinfo('CalculatorResult','Your awnser is:'+str(calcresult))
+       if oper == '*':
+         calcresult = str(num1*num2)
+         messagebox.showinfo('CalculatorResult','Your awnser is '+str(calcresult))
+       if oper == '/':
+         calcresult = str(num1/num2)
+         messagebox.showinfo('CalculatorResult','Result: '+str(calcresult))
+      if CALCULATOR_ALLOWED == False:
+        messagebox.showerror('403','403: Calculator access denied in settings.')
 ####DO NOT DELETE OR EDIT. NOT EVEN IF YOU KNOW HOW TOO!!!!####
 else:
   messagebox.showerror('wrongpasscode','error wrong password: '+str(loginpass))
+
   ####CODE END###
