@@ -1,24 +1,27 @@
+adl = [9,6,7,3]
+wl = [0.3,0.02,0.01]
 DESC = 'ReplOS is a OS-Like System made out of python and tkinter. Its beta and has a theme similar to windows 95 or 98 enjoy! #tkinter #python #tk #graphics |photo by unsplash! bg image coming soon. OVER 100 LINES OF CODE #OVER100LINESOFCODE'#description that appers in the OS info 
 ####IMPORT AND SCREEN CONFIG####
 from tkinter import messagebox
-import time,turtle,os,random,tkinter
+import turtle,os,random,tkinter
 import tkinter as tk
 from tkinter import ttk
 from tkinter import *
 from tkinter.ttk import *
 ####LOADING SCREEN####
 import time
-for i in range(11):
+for i in range(3):
  ws = Tk()
  def step():
     for i in range(37):
         ws.update_idletasks()
-        pb1['value'] += 3
-        time.sleep(0.02)
+        pb1['value'] += random.choice(adl)
+        time.sleep(random.choice(wl))
         
     pb1.destroy()
     ws.destroy()
  pb1 = Progressbar(ws, orient=HORIZONTAL, length=379, mode='determinate')
+
  pb1.pack(expand=True)
  step()
 ####MAIN####
@@ -108,4 +111,4 @@ if loginpass == code:
 ####DO NOT DELETE OR EDIT. NOT EVEN IF YOU KNOW HOW TOO!!!!####
 else:
   messagebox.showerror('wrongpasscode','error wrong password: '+str(loginpass))
-  ####CODE END####
+  ####CODE END###
