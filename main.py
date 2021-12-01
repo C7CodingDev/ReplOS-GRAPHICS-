@@ -105,5 +105,7 @@ if loginpass == code:
          screen.bgcolor('light blue')
       if DOWNLOADING_ALLOWED == False:  
        messagebox.showerror('403','ACCESS DENIED. DOWNLOADING SET TO False.')
+####DO NOT DELETE OR EDIT. NOT EVEN IF YOU KNOW HOW TOO!!!!####
 else:
   messagebox.showerror('wrongpasscode','error wrong password: '+str(loginpass))
+  ####CODE END####
