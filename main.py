@@ -97,6 +97,7 @@ if loginpass == code:
      messagebox.showinfo('Version','Version: '+version)
      messagebox.showinfo('OSid','OS id:'+str(OS_ID))
      messagebox.showinfo('desc','description: '+DESC)
+     ####100 LINES MARK WHOOHOO!!!####
      messagebox.showinfo('build','build: '+str(build))
      messagebox.showinfo('Github','On Github: '+str(ON_GITHUB))
      messagebox.showinfo('Lines',' Fun Fact: There are '+str(LINES)+' Of code!')
@@ -105,7 +106,7 @@ if loginpass == code:
       if DOWNLOADING_ALLOWED == True:
         dwnld=screen.textinput('download','Download: [DL for download list]')
         if dwnld == 'DL':
-          ####100 LINES MARK WHOOHOO!!!####
+          
           ####FakeBsod####
           messagebox.showinfo('app9128768586','FakeBsod')
         if dwnld == 'FakeBsod':
