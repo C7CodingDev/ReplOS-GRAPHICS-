@@ -38,7 +38,7 @@ DOWNLOADING_ALLOWED = True #If the user can download games [discluding chatbot b
 CALCULATOR_ALLOWED = True #I put this feture because I dont want people using the calculator for school tests
 ####DO NOT EDIT ON_GITHUB HOWEVER IN LINES WHEN YOU ADD CODE LINES CHANGE IT TO THE  NEW LINE AMOUNT!####
 ON_GITHUB = True
-LINES = 141
+LINES = 145
 ####DO NOT EDIT BELOW THIS UNLESS YOU KNOW HOW TOO!!#### 
 ####LOCK CONFIG####
 if SYSTEM_LOCK == True:
@@ -67,7 +67,7 @@ if loginpass == code:
     run=screen.textinput('Run','Open/Run:')
     ####commandslist###
     if run == 'cmds':
-      messagebox._show('AppId=CmdsAppViewer948255','Commands: photoviewer -- views a pic  | logout -- logs out| game -- chat bot game| OSinfo -- more info about the os | Download -- download more games!| calculator - calculator','question','okcancel')
+      messagebox._show('AppId=CmdsAppViewer948255','Commands: photoviewer -- views a pic  | logout -- logs out| game -- chat bot game| OSinfo -- more info about the os | Download -- download more games!| calculator - calculator| color - color picker','question','okcancel')
       ####photoviewer####
     if run == 'photoviewer':
       if PHOTOVIEWER_ALLOWED == True:
@@ -134,6 +134,10 @@ if loginpass == code:
          messagebox.showinfo('CalculatorResult','Result: '+str(calcresult))
       if CALCULATOR_ALLOWED == False:
         messagebox.showerror('403','403: Calculator access denied in settings.')
+        ####COLOR PICKER####
+      if run == 'color':
+       from tkinter import colorchooser
+       colorchooser.askcolor(color='cyan')
 ####DO NOT DELETE OR EDIT. NOT EVEN IF YOU KNOW HOW TOO!!!!####
 else:
   messagebox.showerror('wrongpasscode','error wrong password: '+str(loginpass))
