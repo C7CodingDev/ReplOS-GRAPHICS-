@@ -26,14 +26,14 @@ for i in range(3):
  step()
 ####MAIN####
 screen = turtle.Screen() #DO NOT EDIT THIS! THIS RENDERS THE ALSO RENDERS!
-alex = turtle.Turtle()  #DO NOT EDIT THIS! THIS RENDERS THE SYSTEM!
+alex = turtle.Turtle()  #DO NOT EDIT THIS! THIS WILL BE USED FOR FUTURE UPDATES!!!
 ####SETTINGS####
 SYSTEM_LOCK = False #if system is locked
 UNLOCKABLE = True #if the user can unlock the system from the lock
 PHOTOVIEWER_ALLOWED = True #if the photoviewer is allowed
-OS_ID = 56782983 #The id for the OS version
-version = 'v.1.5' #OS Version
-build = 1231021.2 #LastUpdated [optional: if the OS was updated 5 hours later you can add .2 or somthing  like that]
+OS_ID = 9623684842 #The id for the OS version
+version = 'v.1.6' #OS Version
+build = 1222021 #LastUpdated [optional: if the OS was updated 5 hours later you can add .2 or somthing  like that]
 DOWNLOADING_ALLOWED = True #If the user can download games [discluding chatbot because it is BUILT IN]
 CALCULATOR_ALLOWED = True #I put this feture because I dont want people using the calculator for school tests
 
@@ -66,7 +66,7 @@ if loginpass == code:
     run=screen.textinput('Run','Open/Run:')
     ####commandslist###
     if run == 'cmds':
-      messagebox._show('AppId=CmdsAppViewer948255','Commands: photoviewer -- views a pic  | logout -- logs out| game -- chat bot game| OSinfo -- more info about the os | Download -- download more games!','question','okcancel')
+      messagebox._show('AppId=CmdsAppViewer948255','Commands: photoviewer -- views a pic  | logout -- logs out| game -- chat bot game| OSinfo -- more info about the os | Download -- download more games!| calculator - calculator','question','okcancel')
       ####photoviewer####
     if run == 'photoviewer':
       if PHOTOVIEWER_ALLOWED == True:
@@ -132,4 +132,6 @@ if loginpass == code:
 else:
   messagebox.showerror('wrongpasscode','error wrong password: '+str(loginpass))
 
+
   ####CODE END###
+
