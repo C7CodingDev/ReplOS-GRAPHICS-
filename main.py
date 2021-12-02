@@ -131,7 +131,4 @@ if loginpass == code:
 ####DO NOT DELETE OR EDIT. NOT EVEN IF YOU KNOW HOW TOO!!!!####
 else:
   messagebox.showerror('wrongpasscode','error wrong password: '+str(loginpass))
-
-
-  ####CODE END###
-
+####CODE END###
