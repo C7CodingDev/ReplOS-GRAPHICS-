@@ -38,7 +38,7 @@ DOWNLOADING_ALLOWED = True #If the user can download games [discluding chatbot b
 CALCULATOR_ALLOWED = True #I put this feture because I dont want people using the calculator for school tests
 ####DO NOT EDIT ON_GITHUB HOWEVER IN LINES WHEN YOU ADD CODE LINES CHANGE IT TO THE  NEW LINE AMOUNT!####
 ON_GITHUB = True
-LINES = 138
+LINES = 141
 
 ####DO NOT EDIT BELOW THIS UNLESS YOU KNOW HOW TOO!!#### 
 ####LOCK CONFIG####
@@ -106,6 +106,7 @@ if loginpass == code:
         dwnld=screen.textinput('download','Download: [DL for download list]')
         if dwnld == 'DL':
           ####100 LINES MARK WHOOHOO!!!####
+          ####FakeBsod####
           messagebox.showinfo('app9128768586','FakeBsod')
         if dwnld == 'FakeBsod':
          screen.bgcolor('blue')
@@ -113,6 +114,7 @@ if loginpass == code:
          screen.bgcolor('light blue')
       if DOWNLOADING_ALLOWED == False:  
        messagebox.showerror('403','ACCESS DENIED. DOWNLOADING SET TO False.')
+       ####CALCULATOR####
     if run == 'calculator':
       if CALCULATOR_ALLOWED == True:
        num1 = int(screen.numinput('Calculator','Number1:'))
