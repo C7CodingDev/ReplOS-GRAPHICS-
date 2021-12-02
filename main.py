@@ -36,8 +36,9 @@ version = 'v.1.6' #OS Version
 build = 1222021 #LastUpdated [optional: if the OS was updated 5 hours later you can add .2 or somthing  like that]
 DOWNLOADING_ALLOWED = True #If the user can download games [discluding chatbot because it is BUILT IN]
 CALCULATOR_ALLOWED = True #I put this feture because I dont want people using the calculator for school tests
-on_github = True
-lines = 137
+####DO NOT EDIT ON_GITHUB HOWEVER IN LINES WHEN YOU ADD CODE LINES CHANGE IT TO THE  NEW LINE AMOUNT!####
+ON_GITHUB = True
+LINES = 138
 
 ####DO NOT EDIT BELOW THIS UNLESS YOU KNOW HOW TOO!!#### 
 ####LOCK CONFIG####
@@ -97,6 +98,8 @@ if loginpass == code:
      messagebox.showinfo('OSid','OS id:'+str(OS_ID))
      messagebox.showinfo('desc','description: '+DESC)
      messagebox.showinfo('build','build: '+str(build))
+     messagebox.showinfo('Github','On Github: '+str(ON_GITHUB))
+     messagebox.showinfo('Lines',' Fun Fact: There are '+str(LINES)+' Of code!')
     ####DOWNLOADING####
     if run == 'Download':
       if DOWNLOADING_ALLOWED == True:
