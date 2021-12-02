@@ -1,11 +1,11 @@
 adl = [9,6,7,3]
 wl = [0.3,0.02,0.01]
+error_codes = ['X850G74','B87H899']
 DESC = 'ReplOS is a OS-Like System made out of python and tkinter. Its beta and has a theme similar to windows 95 or 98 enjoy! #tkinter #python #tk #graphics |photo by unsplash! bg image coming soon. OVER 100 LINES OF CODE' #OVER100LINESOFCODE'#description that appers in the OS info 
 ####IMPORT AND SCREEN CONFIG####
-from tkinter import messagebox
+from tkinter import messagebox,ttk
 import turtle,os,random,tkinter
 import tkinter as tk
-from tkinter import ttk
 from tkinter import *
 from tkinter.ttk import *
 ####LOADING SCREEN####
