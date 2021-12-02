@@ -135,7 +135,7 @@ if loginpass == code:
       if CALCULATOR_ALLOWED == False:
         messagebox.showerror('403','403: Calculator access denied in settings.')
         ####COLOR PICKER####
-      if run == 'color':
+    if run == 'color':
        from tkinter import colorchooser
        colorchooser.askcolor(color='cyan')
 ####DO NOT DELETE OR EDIT. NOT EVEN IF YOU KNOW HOW TOO!!!!####
