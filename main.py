@@ -38,7 +38,7 @@ DOWNLOADING_ALLOWED = True #If the user can download games [discluding chatbot b
 CALCULATOR_ALLOWED = True #I put this feture because I dont want people using the calculator for school tests
 ####DO NOT EDIT ON_GITHUB HOWEVER IN LINES WHEN YOU ADD CODE LINES CHANGE IT TO THE  NEW LINE AMOUNT!####
 ON_GITHUB = True
-LINES = 145
+LINES = 148
 ####DO NOT EDIT BELOW THIS UNLESS YOU KNOW HOW TOO!!#### 
 ####LOCK CONFIG####
 if SYSTEM_LOCK == True:
@@ -107,13 +107,15 @@ if loginpass == code:
         if dwnld == 'DL':
           
           ####FakeBsod####
-          messagebox.showinfo('app9128768586','FakeBsod')
+          messagebox.showinfo('app9128768586','FakeBsod|quiz')
         if dwnld == 'FakeBsod':
          screen.bgcolor('blue')
          time.sleep(3)
          screen.bgcolor('light blue')
+
       if DOWNLOADING_ALLOWED == False:  
        messagebox.showerror('403','ACCESS DENIED. DOWNLOADING SET TO False.')
+      
        ####CALCULATOR####
     if run == 'calculator':
       if CALCULATOR_ALLOWED == True:
@@ -138,6 +140,7 @@ if loginpass == code:
     if run == 'color':
        from tkinter import colorchooser
        colorchooser.askcolor(color='cyan')
+    
 ####DO NOT DELETE OR EDIT. NOT EVEN IF YOU KNOW HOW TOO!!!!####
 else:
   messagebox.showerror('wrongpasscode','error wrong password: '+str(loginpass))
