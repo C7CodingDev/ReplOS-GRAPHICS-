@@ -1,8 +1,7 @@
 adl = [9,6,7,3]
 wl = [0.3,0.02,0.01]
 DESC = 'ReplOS is a OS-Like System made out of python and tkinter. Its beta and has a theme similar to windows 95 or 98 enjoy! #tkinter #python #tk #graphics |photo by unsplash! bg image coming soon. 
-on_github = 'True'
-OVER 100 LINES OF CODE #OVER100LINESOFCODE'#description that appers in the OS info 
+OVER 100 LINES OF CODE' #OVER100LINESOFCODE'#description that appers in the OS info 
 ####IMPORT AND SCREEN CONFIG####
 from tkinter import messagebox
 import turtle,os,random,tkinter
@@ -38,7 +37,8 @@ version = 'v.1.6' #OS Version
 build = 1222021 #LastUpdated [optional: if the OS was updated 5 hours later you can add .2 or somthing  like that]
 DOWNLOADING_ALLOWED = True #If the user can download games [discluding chatbot because it is BUILT IN]
 CALCULATOR_ALLOWED = True #I put this feture because I dont want people using the calculator for school tests
-
+on_github = True
+lines = 137
 
 ####DO NOT EDIT BELOW THIS UNLESS YOU KNOW HOW TOO!!#### 
 ####LOCK CONFIG####
