@@ -140,6 +140,7 @@ if loginpass == code:
     if run == 'color':
        from tkinter import colorchooser
        colorchooser.askcolor(color='cyan')
+       ####BROWSER####
     if run == 'browser':
       import os
       os.system('firefox')
