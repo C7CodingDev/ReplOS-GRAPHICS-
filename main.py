@@ -33,12 +33,12 @@ UNLOCKABLE = True #if the user can unlock the system from the lock
 PHOTOVIEWER_ALLOWED = True #if the photoviewer is allowed
 OS_ID = 9623684842 #The id for the OS version
 version = 'v.1.6' #OS Version
-build = 1222021 #LastUpdated [optional: if the OS was updated 5 hours later you can add .2 or somthing  like that]
+build = 1222021 #LastUpdated 
 DOWNLOADING_ALLOWED = True #If the user can download games [discluding chatbot because it is BUILT IN]
 CALCULATOR_ALLOWED = True #I put this feture because I dont want people using the calculator for school tests
 ####DO NOT EDIT ON_GITHUB HOWEVER IN LINES WHEN YOU ADD CODE LINES CHANGE IT TO THE  NEW LINE AMOUNT!####
 ON_GITHUB = True
-LINES = 148
+LINES = 150
 ####DO NOT EDIT BELOW THIS UNLESS YOU KNOW HOW TOO!!#### 
 ####LOCK CONFIG####
 if SYSTEM_LOCK == True:
@@ -67,7 +67,7 @@ if loginpass == code:
     run=screen.textinput('Run','Open/Run:')
     ####commandslist###
     if run == 'cmds':
-      messagebox._show('AppId=CmdsAppViewer948255','Commands: photoviewer -- views a pic  | logout -- logs out| game -- chat bot game| OSinfo -- more info about the os | Download -- download more games!| calculator - calculator| color - color picker','question','okcancel')
+      messagebox._show('AppId=CmdsAppViewer948255','Commands: photoviewer -- views a pic  | logout -- logs out| game -- chat bot game| OSinfo -- more info about the os | Download -- download more games!| calculator - calculator| color - color picker| browser -firefox browser','question','okcancel')
       ####photoviewer####
     if run == 'photoviewer':
       if PHOTOVIEWER_ALLOWED == True:
@@ -140,7 +140,9 @@ if loginpass == code:
     if run == 'color':
        from tkinter import colorchooser
        colorchooser.askcolor(color='cyan')
-    
+    if run == 'browser':
+      import os
+      os.system('firefox')
 ####DO NOT DELETE OR EDIT. NOT EVEN IF YOU KNOW HOW TOO!!!!####
 else:
   messagebox.showerror('wrongpasscode','error wrong password: '+str(loginpass))
