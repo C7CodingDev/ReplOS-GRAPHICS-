@@ -1,3 +1,6 @@
+####DO NOT DELETE! THIS IS THE SOUND CONFIGURATION.####
+from replit import audio
+###do not edit###
 adl = [9,6,7,3]
 wl = [0.3,0.02,0.01]
 error_codes = ['X850G74','B87H899']
@@ -8,6 +11,7 @@ import turtle,os,random,tkinter
 import tkinter as tk
 from tkinter import *
 from tkinter.ttk import *
+
 ####LOADING SCREEN####
 import time
 for i in range(3):
@@ -31,14 +35,14 @@ alex = turtle.Turtle()  #DO NOT EDIT THIS! THIS WILL BE USED FOR FUTURE UPDATES!
 SYSTEM_LOCK = False #if system is locked
 UNLOCKABLE = True #if the user can unlock the system from the lock
 PHOTOVIEWER_ALLOWED = True #if the photoviewer is allowed
-OS_ID = 9623684842 #The id for the OS version
-version = 'v.1.6' #OS Version
-build = 1222021 #LastUpdated 
+OS_ID = 8628794844 #The id for the OS version
+version = 'v.1.7' #OS Version
+build = 12102021 #LastUpdated 
 DOWNLOADING_ALLOWED = True #If the user can download games [discluding chatbot because it is BUILT IN]
 CALCULATOR_ALLOWED = True #I put this feture because I dont want people using the calculator for school tests
 ####DO NOT EDIT ON_GITHUB HOWEVER IN LINES WHEN YOU ADD CODE LINES CHANGE IT TO THE  NEW LINE AMOUNT!####
 ON_GITHUB = True
-LINES = 150
+LINES = 159
 ####DO NOT EDIT BELOW THIS UNLESS YOU KNOW HOW TOO!!#### 
 ####LOCK CONFIG####
 if SYSTEM_LOCK == True:
@@ -73,6 +77,7 @@ if loginpass == code:
       if PHOTOVIEWER_ALLOWED == True:
        messagebox.showinfo('imageviewer','picture: infoicon.png')
       if PHOTOVIEWER_ALLOWED == False:
+       audio.play_file('err.mp3')
        messagebox.showwarning('403 - access denied','access was denied due to setting PHOTOVIEWER_ALLOWED set to False')
        ####logout####
     if run == 'logout':
@@ -80,6 +85,7 @@ if loginpass == code:
       if lo == code:
        screen.bgcolor('light blue')
       else:
+       audio.play_file('err.mp3')
        messagebox.showerror('wrongpasscode','error wrong password: '+str(lo))
     if run == 'game':
       ####CHAT BOT GAME####
@@ -114,6 +120,7 @@ if loginpass == code:
          screen.bgcolor('light blue')
 
       if DOWNLOADING_ALLOWED == False:  
+       audio.play_file('err.mp3')
        messagebox.showerror('403','ACCESS DENIED. DOWNLOADING SET TO False.')
       
        ####CALCULATOR####
@@ -135,6 +142,7 @@ if loginpass == code:
          calcresult = str(num1/num2)
          messagebox.showinfo('CalculatorResult','Result: '+str(calcresult))
       if CALCULATOR_ALLOWED == False:
+        audio.play_file('err.mp3')
         messagebox.showerror('403','403: Calculator access denied in settings.')
         ####COLOR PICKER####
     if run == 'color':
@@ -146,5 +154,6 @@ if loginpass == code:
       os.system('firefox')
 ####DO NOT DELETE OR EDIT. NOT EVEN IF YOU KNOW HOW TOO!!!!####
 else:
+  audio.play_file('err.mp3')
   messagebox.showerror('wrongpasscode','error wrong password: '+str(loginpass))
 ####CODE END###
