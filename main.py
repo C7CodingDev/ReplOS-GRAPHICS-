@@ -42,7 +42,7 @@ DOWNLOADING_ALLOWED = True #If the user can download games [discluding chatbot b
 CALCULATOR_ALLOWED = True #I put this feture because I dont want people using the calculator for school tests
 ####DO NOT EDIT ON_GITHUB HOWEVER IN LINES WHEN YOU ADD CODE LINES CHANGE IT TO THE  NEW LINE AMOUNT!####
 ON_GITHUB = True
-LINES = 159
+LINES = 160
 ####DO NOT EDIT BELOW THIS UNLESS YOU KNOW HOW TOO!!#### 
 ####LOCK CONFIG####
 if SYSTEM_LOCK == True:
