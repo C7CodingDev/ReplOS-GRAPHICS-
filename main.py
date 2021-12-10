@@ -55,6 +55,7 @@ if SYSTEM_LOCK == True:
    if lock == False:
      messagebox.showerror('LOCK DETECTED ','Click ok to unlock')
   if UNLOCKABLE == False:
+    audio.play_file('err.mp3')
     messagebox.showerror('You Cannot Unlock','You cannot unlock this because UNLOCKABLE has been set to False.')
     exit('unlockable was set to false')
 ####LOGIN DO NOT EDIT UNLESS YOU KNOW HOW TOO####
